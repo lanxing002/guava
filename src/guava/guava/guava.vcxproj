@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{1b41ca9b-15c7-4845-9fcd-012f57cb6e6d}</ProjectGuid>
-    <RootNamespace>zreflect</RootNamespace>
+    <ProjectGuid>{d3eb698e-e77b-44b7-86d9-55b985bb7edf}</ProjectGuid>
+    <RootNamespace>guava</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -104,7 +104,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,15 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="reflect_manager.cpp" />
-    <ClCompile Include="refl_basic.cpp" />
-    <ClCompile Include="zreflect.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="reflect_id.hpp" />
-    <ClInclude Include="reflect_manager.h" />
-    <ClInclude Include="reflect_type.h" />
-    <ClInclude Include="refl_basic.h" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

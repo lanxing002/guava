@@ -15,28 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="zreflect.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="reflect_manager.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="refl_basic.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="reflect_id.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="reflect_type.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="reflect_manager.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="refl_basic.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
