@@ -18,5 +18,25 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="detail.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="var.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="type.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="detail.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="var.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
