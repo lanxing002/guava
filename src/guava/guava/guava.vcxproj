@@ -130,11 +130,13 @@
   <ItemGroup>
     <ClCompile Include="detail.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="property.cpp" />
     <ClCompile Include="type.cpp" />
     <ClCompile Include="var.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="detail.h" />
+    <ClInclude Include="property.h" />
     <ClInclude Include="type.h" />
     <ClInclude Include="var.h" />
   </ItemGroup>

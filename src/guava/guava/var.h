@@ -21,6 +21,9 @@ public:
 	template<typename T>
 	var(T&& data) noexcept;
 
+	template<typename T>
+	T* cast();
+
 private:
 	type var_type;
 	void* raw_data_pointer{ nullptr };
@@ -36,6 +39,16 @@ var::var(T&& data) noexcept :
 	var_type(type::get<detail::wrapper_mapper_t<T>>()),
 	raw_data_pointer(std::addressof(data)) 
 	{  }
+
+template<typename T>
+T* var::cast()
+{
+	type target_type = type::get<T>();
+	if (target_type.get_type_data()->type_id == var_type.get_type_data()->type_id)
+		return static_cast<T*>(raw_data_pointer);
+	else
+		return nullptr;
+}
 }
 
 

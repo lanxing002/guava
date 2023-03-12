@@ -33,11 +33,9 @@ namespace guava
 
 		type& operator=(const type&) = default;
 		type& operator=(type&&) = default;
-		
-		template<typename T>
-		T* cast();
 
 		const std::string&  get_name();
+		inline type_data const* get_type_data() { return m_type_data; }
 
 
 		// -------- static method -----------

@@ -7,7 +7,13 @@ using namespace guava;
 class Base
 {
 public:
-	int data;
+	int data{0};
+};
+
+class derived : public Base
+{
+public:
+	float data{.0f};
 };
 
 //Base make_b()
@@ -17,6 +23,7 @@ public:
 
 int main()
 {
+	derived d;
 	//const Base& b = make_b();
 
 	using um = std::unordered_map<std::string, std::string>;
@@ -38,6 +45,7 @@ int main()
 
 	Base base;
 	var obj = base;
+	auto p_b = obj.cast<Base>();
 
 	// register base
 	// register derived
